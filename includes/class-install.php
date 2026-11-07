@@ -328,6 +328,49 @@ final class Install {
 	}
 
 	/**
+	 * Plugin deletion, run by Freemius after uninstall (a plugin with an uninstall.php would
+	 * bypass Freemius's own uninstall hook).
+	 *
+	 * By default nothing is removed, so deleting the plugin does not destroy the index or the
+	 * conversations. Tick "Also delete the index, conversations and settings" in Settings first to
+	 * remove everything.
+	 *
+	 * @return void
+	 */
+	public static function uninstall() {
+		global $wpdb;
+
+		$settings = get_option( 'kai_chatbot_settings', array() );
+
+		if ( empty( $settings['delete_on_uninstall'] ) ) {
+			return;
+		}
+
+		foreach ( self::table_names() as $name ) {
+			$wpdb->query( 'DROP TABLE IF EXISTS `' . esc_sql( self::table( $name ) ) . '`' ); // phpcs:ignore WordPress.DB.DirectDatabaseQuery
+		}
+
+		foreach ( array( 'kai_chatbot_settings', 'kai_chatbot_db_version', 'kai_chatbot_sync_state' ) as $option ) {
+			delete_option( $option );
+		}
+
+		delete_transient( 'kai_chatbot_sync_lock' );
+
+		// Rate limit counters and cached query vectors.
+		$wpdb->query( "DELETE FROM {$wpdb->options} WHERE option_name LIKE '\\_transient\\_kai\\_chat\\_%' OR option_name LIKE '\\_transient\\_timeout\\_kai\\_chat\\_%'" ); // phpcs:ignore WordPress.DB.DirectDatabaseQuery
+
+		delete_post_meta_by_key( '_kai_chatbot_exclude' );
+
+		self::deactivate();
+
+		foreach ( array( Capabilities::MANAGE, Capabilities::KNOWLEDGE, Capabilities::ANALYTICS ) as $cap ) {
+			foreach ( wp_roles()->role_objects as $role ) {
+				$role->remove_cap( $cap );
+			}
+		}
+	}
+
+	/**
 	 * Names of all tables of the plugin.
 	 *
 	 * @return string[]

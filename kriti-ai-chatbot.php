@@ -28,3 +28,44 @@ register_activation_hook(__FILE__, array('KritiAIChatbot\\Install', 'activate'))
 register_deactivation_hook(__FILE__, array('KritiAIChatbot\\Install', 'deactivate'));
 
 add_action('plugins_loaded', array('KritiAIChatbot\\Plugin', 'boot'));
+
+if (! function_exists('kai_chatbot_freemius_connector')) {
+  // Create a helper function for easy SDK access.
+  function kai_chatbot_freemius_connector()
+  {
+    global $kai_chatbot_freemius_connector;
+
+    if (! isset($kai_chatbot_freemius_connector)) {
+      // Include Freemius SDK.
+      require_once dirname(__FILE__) . '/vendor/freemius/start.php';
+
+      $kai_chatbot_freemius_connector = fs_dynamic_init(array(
+        'id'                  => '44274',
+        'slug'                => 'kriti-ai-chatbot',
+        'type'                => 'plugin',
+        'public_key'          => 'pk_7c3866c8ca62f7eae5d48b7b7466e',
+        'is_premium'          => true,
+        'premium_suffix'      => 'Pro',
+        // If your plugin is a serviceware, set this option to false.
+        'has_premium_version' => true,
+        'has_addons'          => false,
+        'has_paid_plans'      => true,
+        'is_org_compliant'    => false,
+        'menu'                => array(
+          'slug'           => 'kriti-ai-chatbot',
+          'first-path'     => 'admin.php?page=kriti-ai-chatbot',
+          'support'        => false,
+        ),
+      ));
+    }
+
+    return $kai_chatbot_freemius_connector;
+  }
+
+  // Init Freemius.
+  kai_chatbot_freemius_connector();
+  // Freemius runs this on deletion, so there is deliberately no uninstall.php.
+  kai_chatbot_freemius_connector()->add_action('after_uninstall', array('KritiAIChatbot\\Install', 'uninstall'));
+  // Signal that SDK was initiated.
+  do_action('kai_chatbot_freemius_connector_loaded');
+}
