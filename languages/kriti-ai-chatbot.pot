@@ -1,0 +1,1029 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Kriti AI Chatbot\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-07 14:22+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.8.9; wp-7.1.4; php-8.5.7\n"
+"X-Domain: kriti-ai-chatbot"
+
+#. 1: number done, 2: total.
+#: includes/class-admin.php:110
+#, php-format
+msgid "%1$s of %2$s pages checked"
+msgstr ""
+
+#. 1: helpful ratings, 2: all ratings.
+#: admin/views/dashboard.php:60
+#, php-format
+msgid "%1$s of %2$s ratings"
+msgstr ""
+
+#. 1: questions today, 2: questions this month.
+#: admin/views/dashboard.php:45
+#, php-format
+msgid "%1$s today · %2$s this month"
+msgstr ""
+
+#. %s: number of jobs.
+#: includes/class-admin.php:114
+#, php-format
+msgid "%s failed jobs were put back in the queue."
+msgstr ""
+
+#. %s: number of unanswered questions.
+#: admin/views/dashboard.php:52
+#, php-format
+msgid "%s unanswered"
+msgstr ""
+
+#: includes/class-settings.php:119
+msgid "1 year"
+msgstr ""
+
+#: includes/class-settings.php:118
+msgid "180 days"
+msgstr ""
+
+#: includes/class-settings.php:116
+msgid "30 days"
+msgstr ""
+
+#: includes/class-settings.php:117
+msgid "90 days"
+msgstr ""
+
+#: includes/class-widget.php:157
+msgid "A button that opens the Kriti AI chatbot."
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"A chatbot that answers visitors' questions from your own content. It indexes "
+"your posts, pages and Easy Digital Downloads products, answers with "
+"citations, and says so when it does not know."
+msgstr ""
+
+#: admin/views/sources.php:95
+msgid ""
+"A sync checks every page and only re-processes the ones whose content "
+"changed, or whose meaning search is out of date. “Re-index everything” "
+"processes every page again."
+msgstr ""
+
+#: admin/views/settings.php:79
+msgid ""
+"Added to the rules the chatbot already follows. It cannot make the chatbot "
+"ignore your content or invent facts."
+msgstr ""
+
+#: admin/views/sources.php:149
+msgid "Address contains"
+msgstr ""
+
+#: admin/views/sources.php:164
+msgid "After saving, press “Sync now” to apply the change."
+msgstr ""
+
+#: admin/views/settings.php:45
+msgid "AI instructions"
+msgstr ""
+
+#: admin/views/settings.php:34
+msgid "AI provider"
+msgstr ""
+
+#: admin/views/dashboard.php:75
+msgid "AI tokens (in / out)"
+msgstr ""
+
+#: includes/class-admin.php:137
+msgid "All conversations were deleted."
+msgstr ""
+
+#: admin/views/settings.php:189
+msgid "Also delete the index, conversations and settings"
+msgstr ""
+
+#: admin/views/dashboard.php:48
+msgid "Answer coverage"
+msgstr ""
+
+#: admin/views/settings.php:55
+msgid "Answer length"
+msgstr ""
+
+#: admin/views/settings.php:83
+msgid "Appearance"
+msgstr ""
+
+#: admin/views/settings.php:130
+msgid "Applies the next time a page is indexed. Run a sync after changing it."
+msgstr ""
+
+#: includes/class-settings.php:62
+msgid "Ask us anything"
+msgstr ""
+
+#: admin/views/dashboard.php:84
+msgid "Asked"
+msgstr ""
+
+#: includes/class-widget.php:104
+msgid "Assistant"
+msgstr ""
+
+#: admin/views/dashboard.php:74
+msgid "Average response"
+msgstr ""
+
+#: admin/views/settings.php:134
+msgid ""
+"Besides keywords, the chatbot can find passages by meaning. Each passage of "
+"your content is turned into numbers (an embedding) by an AI provider when it "
+"is indexed."
+msgstr ""
+
+#: admin/views/settings.php:104
+msgid "Bottom left"
+msgstr ""
+
+#: admin/views/settings.php:103
+msgid "Bottom right"
+msgstr ""
+
+#: admin/views/settings.php:51
+msgid "Casual"
+msgstr ""
+
+#: admin/views/sources.php:153
+msgid "Categories and tags"
+msgstr ""
+
+#: admin/views/settings.php:195
+msgid ""
+"Changes apply to the chat window straight away. Retrieval and meaning search "
+"changes apply to pages the next time they are indexed."
+msgstr ""
+
+#: includes/class-widget.php:136 includes/class-widget.php:164
+msgid "Chat with us"
+msgstr ""
+
+#: includes/class-retention.php:74 admin/views/settings.php:30
+msgid "Chatbot"
+msgstr ""
+
+#: includes/class-widget.php:156
+msgid "Chatbot button"
+msgstr ""
+
+#: includes/class-ui.php:41
+msgid "Chatbot sections"
+msgstr ""
+
+#: admin/views/settings.php:21
+msgid "Chatbot Settings"
+msgstr ""
+
+#: admin/views/sources.php:39
+msgid ""
+"Choose what the chatbot may answer from. Only published pages that are not "
+"password protected are ever used. Changed pages are updated a few seconds "
+"after you save them, and the whole site is checked again once a day."
+msgstr ""
+
+#: admin/views/settings.php:73
+msgid "Citations"
+msgstr ""
+
+#: admin/views/dashboard.php:99
+msgid "Cited"
+msgstr ""
+
+#: includes/class-widget.php:97
+msgid "Close chat"
+msgstr ""
+
+#: admin/views/settings.php:97
+msgid "Colour"
+msgstr ""
+
+#: admin/views/settings.php:57
+msgid "Concise"
+msgstr ""
+
+#: admin/views/settings.php:69
+msgid "Contact text"
+msgstr ""
+
+#: admin/views/dashboard.php:39
+msgid "Conversations"
+msgstr ""
+
+#: admin/views/dashboard.php:34
+msgid ""
+"Conversations are not stored (see Settings → Privacy and limits), so there "
+"is nothing to show here."
+msgstr ""
+
+#: admin/views/sources.php:159
+msgid ""
+"Custom fields whose text is read as part of the page, one field name per "
+"line. Useful when a theme keeps content outside the editor. Other custom "
+"fields are never read."
+msgstr ""
+
+#: includes/class-ui.php:27 includes/class-admin.php:49
+#: includes/class-admin.php:49 admin/views/dashboard.php:31
+msgid "Dashboard"
+msgstr ""
+
+#: admin/views/settings.php:204
+msgid "Delete all conversations"
+msgstr ""
+
+#: admin/views/settings.php:200
+msgid "Delete conversations"
+msgstr ""
+
+#: admin/views/settings.php:201
+msgid "Delete every stored conversation?"
+msgstr ""
+
+#: admin/views/sources.php:173
+msgid "Delete index"
+msgstr ""
+
+#: admin/views/sources.php:169
+msgid "Delete the index"
+msgstr ""
+
+#: admin/views/sources.php:170
+msgid "Delete the whole index?"
+msgstr ""
+
+#: admin/views/settings.php:58
+msgid "Detailed"
+msgstr ""
+
+#: includes/class-ui.php:245
+msgid "Developed by Kriti AI."
+msgstr ""
+
+#: includes/class-settings.php:121
+msgid "Do not store conversations"
+msgstr ""
+
+#. 1: new or changed pages, 2: unchanged pages, 3: errors.
+#: includes/class-admin.php:112
+#, php-format
+msgid "Done. %1$s new or changed, %2$s unchanged, %3$s errors."
+msgstr ""
+
+#: admin/views/settings.php:183
+msgid "Earlier turns the chatbot remembers"
+msgstr ""
+
+#: admin/views/sources.php:130
+msgid ""
+"Easy Digital Downloads: licence options are indexed, prices are always read "
+"live."
+msgstr ""
+
+#: admin/views/settings.php:155
+msgid "Embedding model"
+msgstr ""
+
+#: admin/views/settings.php:141
+msgid "Embedding provider"
+msgstr ""
+
+#: admin/views/dashboard.php:129
+msgid "Evidence"
+msgstr ""
+
+#: admin/views/sources.php:157
+msgid "Extra custom fields"
+msgstr ""
+
+#: admin/views/sources.php:47 admin/views/sources.php:116
+msgid "Failed"
+msgstr ""
+
+#: admin/views/settings.php:138
+msgid "Find passages by meaning as well as by keywords"
+msgstr ""
+
+#: includes/class-settings.php:120
+msgid "Forever"
+msgstr ""
+
+#: admin/views/settings.php:50
+msgid "Friendly"
+msgstr ""
+
+#: admin/views/settings.php:28
+msgid "General"
+msgstr ""
+
+#: admin/views/settings.php:93
+msgid "Greeting"
+msgstr ""
+
+#. 1: page title, 2: excerpt of the page.
+#: includes/class-orchestrator.php:216
+#, php-format
+msgid "Here is what I found on “%1$s”:%2$s"
+msgstr ""
+
+#: includes/class-settings.php:63
+msgid ""
+"Hi! Ask me a question about this site and I will answer from our content."
+msgstr ""
+
+#: admin/views/settings.php:161
+msgid ""
+"How close in meaning a passage must be before the chatbot answers from it. "
+"Models differ a lot, so test with your own questions and adjust. Higher is "
+"stricter."
+msgstr ""
+
+#: admin/views/settings.php:114
+msgid ""
+"How passages are found and how sure the chatbot must be before it answers."
+msgstr ""
+
+#: admin/views/settings.php:23
+msgid "How the chatbot answers, how it looks, and what it keeps."
+msgstr ""
+
+#: admin/views/dashboard.php:31
+msgid "How visitors use the chatbot, and how well your content answers them."
+msgstr ""
+
+#: includes/class-orchestrator.php:121
+msgid "I could not find an answer to that in our content."
+msgstr ""
+
+#: includes/class-orchestrator.php:117
+msgid ""
+"I could not find an answer to that in our content. Could you rephrase it, or "
+"ask about something else on this site?"
+msgstr ""
+
+#: admin/views/settings.php:62
+msgid "If it does not know"
+msgstr ""
+
+#: admin/views/sources.php:115
+msgid "Indexed"
+msgstr ""
+
+#: admin/views/dashboard.php:68
+msgid "Indexed pages"
+msgstr ""
+
+#: admin/views/dashboard.php:72
+msgid "Indexing failed"
+msgstr ""
+
+#: admin/views/dashboard.php:71
+msgid "Indexing waiting"
+msgstr ""
+
+#: admin/views/settings.php:89
+msgid "Input hint"
+msgstr ""
+
+#: includes/class-ui.php:52
+msgid "Integrations Hub"
+msgstr ""
+
+#. 1: job type, 2: page id.
+#: admin/views/sources.php:84
+#, php-format
+msgid "Job “%1$s” for page %2$s"
+msgstr ""
+
+#: admin/views/settings.php:167
+msgid "Keep conversations"
+msgstr ""
+
+#: admin/views/settings.php:122
+msgid ""
+"Keyword evidence needed before the chatbot answers; below this it says it "
+"does not know instead of guessing. Higher is stricter."
+msgstr ""
+
+#: admin/views/sources.php:63
+msgid "Keywords only"
+msgstr ""
+
+#: admin/views/dashboard.php:65
+msgid "Knowledge base"
+msgstr ""
+
+#: includes/class-ui.php:28 includes/class-admin.php:50
+#: includes/class-admin.php:50 admin/views/dashboard.php:24
+#: admin/views/sources.php:37 admin/views/sources.php:39
+msgid "Knowledge Sources"
+msgstr ""
+
+#: includes/class-admin.php:135
+msgid "Knowledge sources saved. Press “Sync now” to update the index."
+msgstr ""
+
+#. Author of the plugin
+msgid "Kriti AI"
+msgstr ""
+
+#. Name of the plugin
+#: includes/class-ui.php:39 includes/class-admin.php:48
+#: admin/views/dashboard.php:29
+msgid "Kriti AI Chatbot"
+msgstr ""
+
+#: admin/views/settings.php:36 admin/views/settings.php:143
+msgid "Kriti AI default"
+msgstr ""
+
+#: includes/class-admin.php:161
+msgid ""
+"Kriti AI has no text provider set up yet, so the chatbot shows the best "
+"matching passage instead of a written answer. Add a provider under Kriti AI "
+"→ Integrations."
+msgstr ""
+
+#: includes/class-admin.php:48
+msgid "Kriti Chatbot"
+msgstr ""
+
+#: admin/views/dashboard.php:128
+msgid "Last asked"
+msgstr ""
+
+#: admin/views/dashboard.php:73 admin/views/sources.php:118
+msgid "Last indexed"
+msgstr ""
+
+#: admin/views/sources.php:143
+msgid "Leave content out"
+msgstr ""
+
+#: admin/views/settings.php:157
+msgid ""
+"Leave empty to use the model saved on the provider’s card in the "
+"Integrations Hub. Fill it in only to override that model for the chatbot."
+msgstr ""
+
+#: includes/class-ui.php:238
+msgid "Links"
+msgstr ""
+
+#: admin/views/settings.php:179
+msgid "Longest question (characters)"
+msgstr ""
+
+#: admin/views/settings.php:134 admin/views/settings.php:136
+msgid "Meaning search"
+msgstr ""
+
+#: admin/views/sources.php:60
+msgid "Meaning search off"
+msgstr ""
+
+#: admin/views/sources.php:54
+msgid "Meaning search on"
+msgstr ""
+
+#: admin/views/settings.php:120
+msgid "Minimum confidence"
+msgstr ""
+
+#: admin/views/settings.php:159
+msgid "Minimum meaning match"
+msgstr ""
+
+#. %s: number of chunks.
+#: includes/class-mysql-vector-store.php:206
+#, php-format
+msgid ""
+"More than %s embedded passages. The built-in store compares them one by one; "
+"use an external vector store for a knowledge base this size."
+msgstr ""
+
+#: admin/views/dashboard.php:116
+msgid "No answers with sources yet."
+msgstr ""
+
+#: includes/class-embedder.php:108
+msgid "No embedding provider is set up."
+msgstr ""
+
+#: admin/views/sources.php:64
+msgid ""
+"No embedding provider is set up. Add one under “Embedding providers” in "
+"Kriti AI → Integrations Hub."
+msgstr ""
+
+#: admin/views/settings.php:165
+msgid ""
+"No names, email addresses or IP addresses are stored with a conversation. "
+"Suggested privacy policy text is added under Settings → Privacy."
+msgstr ""
+
+#: admin/views/dashboard.php:92
+msgid "No questions yet."
+msgstr ""
+
+#: admin/views/dashboard.php:60
+msgid "No ratings yet"
+msgstr ""
+
+#: admin/views/dashboard.php:144
+msgid "Nothing unanswered. Good."
+msgstr ""
+
+#: admin/views/settings.php:189
+msgid ""
+"Off by default: deleting the plugin keeps its data, so a reinstall does not "
+"start from nothing."
+msgstr ""
+
+#: admin/views/sources.php:147
+msgid "One ID per line."
+msgstr ""
+
+#: admin/views/sources.php:151
+msgid "One part of an address per line, for example /private/ or /thank-you."
+msgstr ""
+
+#: admin/views/sources.php:155
+msgid ""
+"One slug per line. Pages in any category or tag with that slug are left out."
+msgstr ""
+
+#: includes/class-widget.php:96
+msgid "Open chat"
+msgstr ""
+
+#: admin/views/sources.php:48 admin/views/sources.php:117
+msgid "Out of date"
+msgstr ""
+
+#: admin/views/settings.php:127
+msgid "Overlap"
+msgstr ""
+
+#: admin/views/dashboard.php:99
+msgid "Page"
+msgstr ""
+
+#: admin/views/sources.php:145
+msgid "Page IDs"
+msgstr ""
+
+#: admin/views/settings.php:124
+msgid "Passage size (words) and overlap"
+msgstr ""
+
+#: admin/views/dashboard.php:69 admin/views/sources.php:44
+msgid "Passages"
+msgstr ""
+
+#: admin/views/settings.php:116
+msgid "Passages per question"
+msgstr ""
+
+#: admin/views/settings.php:99
+msgid "Pick a dark colour; text on it is white."
+msgstr ""
+
+#. %d: maximum number of characters.
+#: includes/class-chat-service.php:43
+msgid "Please keep your question under %d characters."
+msgstr ""
+
+#: includes/class-chat-service.php:36
+msgid "Please type a question."
+msgstr ""
+
+#: admin/views/settings.php:101
+msgid "Position"
+msgstr ""
+
+#: admin/views/settings.php:165
+msgid "Privacy and limits"
+msgstr ""
+
+#: includes/class-ui.php:239
+msgid "Privacy Policy"
+msgstr ""
+
+#: admin/views/settings.php:49
+msgid "Professional"
+msgstr ""
+
+#: admin/views/settings.php:156
+msgid "Provider default"
+msgstr ""
+
+#: admin/views/dashboard.php:84 admin/views/dashboard.php:126
+msgid "Question"
+msgstr ""
+
+#: admin/views/dashboard.php:41
+msgid "Questions"
+msgstr ""
+
+#: includes/class-retention.php:61
+msgid "Questions and answers are not stored."
+msgstr ""
+
+#. %d: number of days.
+#: includes/class-retention.php:66
+msgid "Questions and answers are stored for %d day."
+msgid_plural "Questions and answers are stored for %d days."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/class-retention.php:63
+msgid "Questions and answers are stored until the site owner deletes them."
+msgstr ""
+
+#: admin/views/settings.php:175
+msgid "Questions per minute, per visitor"
+msgstr ""
+
+#: admin/views/dashboard.php:121
+msgid ""
+"Questions your content could not answer. Each one is a page or FAQ you may "
+"want to write."
+msgstr ""
+
+#: admin/views/dashboard.php:56
+msgid "Rated helpful"
+msgstr ""
+
+#: admin/views/sources.php:98
+msgid "Re-index everything"
+msgstr ""
+
+#: admin/views/sources.php:73
+msgid "Recent problems"
+msgstr ""
+
+#: admin/views/settings.php:200
+msgid ""
+"Removes every stored question and answer, and the unanswered-question list "
+"built from them. This cannot be undone."
+msgstr ""
+
+#: admin/views/sources.php:169
+msgid ""
+"Removes everything the chatbot knows. Your posts and pages are not touched. "
+"Run a sync to build it again."
+msgstr ""
+
+#: admin/views/settings.php:114
+msgid "Retrieval"
+msgstr ""
+
+#: admin/views/sources.php:99
+msgid "Retry failed"
+msgstr ""
+
+#: admin/views/settings.php:196
+msgid "Save settings"
+msgstr ""
+
+#: admin/views/sources.php:165
+msgid "Save sources"
+msgstr ""
+
+#: admin/views/settings.php:64
+msgid "Say it does not know"
+msgstr ""
+
+#: admin/views/settings.php:65
+msgid "Say it does not know and show the contact text"
+msgstr ""
+
+#: includes/class-widget.php:98
+msgid "Send"
+msgstr ""
+
+#: admin/views/settings.php:153
+msgid ""
+"Set up in Kriti AI → Integrations Hub, under “Embedding providers”. If you "
+"change the provider or model, run a sync: pages are embedded again."
+msgstr ""
+
+#: includes/class-ui.php:29 includes/class-admin.php:51
+#: includes/class-admin.php:51 admin/views/settings.php:23
+msgid "Settings"
+msgstr ""
+
+#: admin/views/settings.php:45
+msgid ""
+"Shape how the chatbot speaks. It always answers only from your content, "
+"whatever you write here."
+msgstr ""
+
+#: admin/views/settings.php:31
+msgid "Show the chat button on the site"
+msgstr ""
+
+#: admin/views/settings.php:74
+msgid "Show the pages an answer is based on"
+msgstr ""
+
+#: admin/views/settings.php:71
+msgid ""
+"Shown when it does not know and the option on the left asks for it. For "
+"example: Please email support@example.com and we will help."
+msgstr ""
+
+#: includes/class-install.php:145
+msgid "Site assistant"
+msgstr ""
+
+#: includes/class-widget.php:105
+msgid "Something went wrong. Please try again."
+msgstr ""
+
+#: admin/views/sources.php:114
+msgid "Source"
+msgstr ""
+
+#: includes/class-widget.php:101 admin/views/sources.php:109
+msgid "Sources"
+msgstr ""
+
+#: admin/views/settings.php:74
+msgid ""
+"Sources are only ever pages that were found for the question, never invented."
+msgstr ""
+
+#: includes/class-widget.php:99
+msgid "Start a new conversation"
+msgstr ""
+
+#: admin/views/sources.php:41
+msgid "Status"
+msgstr ""
+
+#: includes/class-widget.php:110 admin/views/settings.php:108
+msgid "Suggested questions"
+msgstr ""
+
+#: includes/class-ui.php:241
+msgid "Support"
+msgstr ""
+
+#: admin/views/settings.php:28
+msgid "Switch the chatbot on and choose which AI writes the answers."
+msgstr ""
+
+#: admin/views/sources.php:95
+msgid "Sync"
+msgstr ""
+
+#: admin/views/sources.php:97
+msgid "Sync now"
+msgstr ""
+
+#: includes/class-ui.php:240
+msgid "Terms of Service"
+msgstr ""
+
+#: includes/class-widget.php:109
+msgid "Thanks for the feedback."
+msgstr ""
+
+#: includes/class-conversation-store.php:180
+msgid "That answer was not found."
+msgstr ""
+
+#: includes/class-admin.php:115
+msgid "That could not run."
+msgstr ""
+
+#: includes/class-conversation-store.php:173
+msgid "That rating is not valid."
+msgstr ""
+
+#: includes/class-text-provider.php:113
+msgid "The AI provider returned an empty answer."
+msgstr ""
+
+#: includes/class-chat-service.php:64
+msgid "The assistant could not answer right now. Please try again in a moment."
+msgstr ""
+
+#: includes/class-chat-service.php:30 includes/class-chat-service.php:109
+msgid "The chatbot is switched off."
+msgstr ""
+
+#: admin/views/sources.php:61
+msgid "The chatbot searches by keywords only."
+msgstr ""
+
+#: includes/class-knowledge-store.php:94
+msgid "The chunks could not be stored."
+msgstr ""
+
+#: includes/class-admin.php:136
+msgid "The index was deleted."
+msgstr ""
+
+#: includes/class-admin.php:156
+msgid ""
+"The Kriti AI plugin is not active, so the chatbot cannot write answers or "
+"understand meaning. It searches by keywords and shows the best matching "
+"passage. Activate Kriti AI and add an AI provider."
+msgstr ""
+
+#: admin/views/dashboard.php:96
+msgid "The pages answers are based on most often."
+msgstr ""
+
+#: includes/class-embedder.php:134
+msgid "The provider returned the wrong number of embeddings."
+msgstr ""
+
+#: includes/class-embedder.php:143
+msgid "The provider returned vectors of different sizes."
+msgstr ""
+
+#: includes/class-retention.php:69
+msgid ""
+"The question, and the passages of this site's content that best match it, "
+"are sent to the AI provider chosen by the site owner to find and write the "
+"answer. The text of the site's own pages is also sent to that provider, in "
+"advance, to prepare it for searching."
+msgstr ""
+
+#: includes/class-knowledge-store.php:43
+msgid "The source could not be saved."
+msgstr ""
+
+#: admin/views/sources.php:143
+msgid ""
+"These rules keep pages out of the chatbot even if their type is switched on. "
+"A page can also be excluded with the custom field _kai_chatbot_exclude. "
+"Excluded pages stop being used at once."
+msgstr ""
+
+#: includes/class-widget.php:100
+msgid "Thinking…"
+msgstr ""
+
+#: includes/class-widget.php:108
+msgid "This answer did not help"
+msgstr ""
+
+#: includes/class-widget.php:107
+msgid "This answer helped"
+msgstr ""
+
+#: admin/views/settings.php:138
+msgid ""
+"This sends the text of your published pages to the provider chosen below. "
+"Switch it off to keep page text from being sent for this purpose."
+msgstr ""
+
+#: admin/views/sources.php:109
+msgid "Tick the kinds of content the chatbot may use."
+msgstr ""
+
+#: admin/views/dashboard.php:127
+msgid "Times asked"
+msgstr ""
+
+#: admin/views/settings.php:85
+msgid "Title"
+msgstr ""
+
+#: admin/views/settings.php:47
+msgid "Tone"
+msgstr ""
+
+#: admin/views/dashboard.php:81
+msgid "Top questions"
+msgstr ""
+
+#: admin/views/dashboard.php:96
+msgid "Top sources"
+msgstr ""
+
+#: includes/class-widget.php:102
+msgid "Try again"
+msgstr ""
+
+#: admin/views/settings.php:31
+msgid ""
+"Turn off to hide the chatbot everywhere, including the shortcode and block."
+msgstr ""
+
+#: includes/class-settings.php:64
+msgid "Type your question…"
+msgstr ""
+
+#: admin/views/dashboard.php:121
+msgid "Unanswered questions"
+msgstr ""
+
+#: admin/views/settings.php:110
+msgid ""
+"Up to four, one per line. They appear as buttons before the first question."
+msgstr ""
+
+#: admin/views/sources.php:113
+msgid "Use"
+msgstr ""
+
+#. 1: provider, 2: model.
+#: admin/views/sources.php:57
+#, php-format
+msgid "Using %1$s, model %2$s."
+msgstr ""
+
+#: includes/class-ui.php:58
+msgid "View site"
+msgstr ""
+
+#: admin/views/sources.php:46
+msgid "Waiting"
+msgstr ""
+
+#: admin/views/sources.php:41
+msgid "What is indexed, what is waiting, and how meaning search is doing."
+msgstr ""
+
+#: admin/views/dashboard.php:65
+msgid "What the chatbot knows, and how indexing is going."
+msgstr ""
+
+#: admin/views/dashboard.php:81
+msgid "What visitors ask most."
+msgstr ""
+
+#: admin/views/settings.php:83
+msgid "What visitors see in the chat window."
+msgstr ""
+
+#: includes/class-retention.php:74
+msgid ""
+"When a visitor asks the chatbot a question, the text of the question is "
+"processed to answer it. No name, email address or IP address is stored with "
+"the question."
+msgstr ""
+
+#: admin/views/settings.php:187
+msgid "When the plugin is deleted"
+msgstr ""
+
+#: admin/views/dashboard.php:70 admin/views/sources.php:45
+msgid "With meaning search"
+msgstr ""
+
+#: includes/class-admin.php:108
+msgid "Working…"
+msgstr ""
+
+#: admin/views/settings.php:41
+msgid ""
+"Writes the answers. Providers and keys are set up in Kriti AI → Integrations "
+"Hub."
+msgstr ""
+
+#: includes/class-widget.php:103
+msgid "You"
+msgstr ""
+
+#: includes/class-chat-service.php:158
+msgid "You are asking too fast. Please wait a moment and try again."
+msgstr ""
+
+#: includes/class-admin.php:294
+msgid "You are not allowed to do this."
+msgstr ""
+
+#: admin/views/settings.php:77
+msgid "Your instructions"
+msgstr ""
+
+#: includes/class-widget.php:106
+msgid "Your question"
+msgstr ""

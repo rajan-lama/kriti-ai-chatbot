@@ -1,0 +1,166 @@
+.kai-chat {
+	--kai-chat-color: #2f4bd6;
+	position: fixed;
+	bottom: 20px;
+	z-index: 99990;
+	font: 15px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+	color: #1d2327;
+}
+.kai-chat--right { right: 20px; }
+.kai-chat--left { left: 20px; }
+
+.kai-chat *, .kai-chat *::before, .kai-chat *::after { box-sizing: border-box; }
+
+.kai-chat__launcher {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 56px;
+	height: 56px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	border-radius: 50%;
+	background: var(--kai-chat-color);
+	color: #fff;
+	box-shadow: 0 6px 20px rgba(0, 0, 0, .25);
+	cursor: pointer;
+}
+.kai-chat__launcher:hover { filter: brightness(1.08); }
+.kai-chat__launcher:focus-visible,
+.kai-chat__icon:focus-visible,
+.kai-chat__send:focus-visible,
+.kai-chat__retry:focus-visible,
+.kai-chat__input:focus-visible,
+.kai-chat a:focus-visible { outline: 3px solid #1d2327; outline-offset: 2px; }
+
+.kai-chat__panel {
+	position: absolute;
+	bottom: 70px;
+	display: flex;
+	flex-direction: column;
+	width: 380px;
+	max-width: calc(100vw - 24px);
+	height: 560px;
+	max-height: calc(100vh - 110px);
+	background: #fff;
+	border: 1px solid #dcdcde;
+	border-radius: 14px;
+	box-shadow: 0 12px 40px rgba(0, 0, 0, .25);
+	overflow: hidden;
+}
+.kai-chat__panel[hidden] { display: none; }
+.kai-chat--right .kai-chat__panel { right: 0; }
+.kai-chat--left .kai-chat__panel { left: 0; }
+
+.kai-chat__header {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+	padding: 12px 8px 12px 16px;
+	background: var(--kai-chat-color);
+	color: #fff;
+}
+.kai-chat__title { flex: 1; margin: 0; font-size: 16px; font-weight: 600; color: inherit; }
+.kai-chat__icon {
+	width: 32px;
+	height: 32px;
+	padding: 0;
+	border: 0;
+	border-radius: 6px;
+	background: transparent;
+	color: inherit;
+	font-size: 16px;
+	cursor: pointer;
+}
+.kai-chat__icon:hover { background: rgba(255, 255, 255, .2); }
+.kai-chat__header .kai-chat__icon:focus-visible { outline-color: #fff; }
+
+.kai-chat__log { flex: 1; padding: 14px; overflow-y: auto; background: #f6f7f7; }
+
+.kai-chat__msg { max-width: 92%; margin: 0 0 12px; padding: 9px 12px; border-radius: 12px; overflow-wrap: anywhere; }
+.kai-chat__msg--bot { background: #fff; border: 1px solid #e0e0e0; }
+.kai-chat__msg--user { margin-left: auto; background: var(--kai-chat-color); color: #fff; }
+.kai-chat__msg--user a { color: #fff; }
+.kai-chat__msg.is-error { border-color: #d63638; }
+.kai-chat__who { display: block; margin-bottom: 2px; font-size: 11px; font-weight: 600; letter-spacing: .03em; text-transform: uppercase; opacity: .65; }
+.kai-chat__body p { margin: 0 0 8px; }
+.kai-chat__body p:last-child, .kai-chat__body ul:last-child, .kai-chat__body ol:last-child { margin-bottom: 0; }
+.kai-chat__body ul, .kai-chat__body ol { margin: 0 0 8px; padding-left: 20px; }
+.kai-chat__body code { padding: 1px 4px; border-radius: 3px; background: rgba(0, 0, 0, .08); font-size: 13px; }
+.kai-chat__body a { color: var(--kai-chat-color); text-decoration: underline; }
+.kai-chat__msg--user .kai-chat__body a { color: #fff; }
+
+.kai-chat__sources { margin-top: 8px; padding-top: 8px; border-top: 1px solid #e0e0e0; font-size: 13px; }
+.kai-chat__sources ul { margin: 4px 0 0; padding: 0; list-style: none; }
+.kai-chat__sources li { margin: 2px 0; }
+.kai-chat__sources a { color: var(--kai-chat-color); }
+
+.kai-chat__retry {
+	margin-top: 8px;
+	padding: 4px 12px;
+	border: 1px solid var(--kai-chat-color);
+	border-radius: 6px;
+	background: #fff;
+	color: var(--kai-chat-color);
+	cursor: pointer;
+}
+
+.kai-chat__typing { color: #50575e; font-style: italic; }
+.kai-chat__typing::after { content: ""; display: inline-block; width: 1.2em; animation: kai-chat-dots 1.2s steps(4, end) infinite; overflow: hidden; vertical-align: bottom; }
+@keyframes kai-chat-dots { 0% { content: ""; } 25% { content: "."; } 50% { content: ".."; } 75% { content: "..."; } }
+
+.kai-chat__form { display: flex; align-items: flex-end; gap: 8px; padding: 10px; border-top: 1px solid #dcdcde; background: #fff; }
+.kai-chat__input {
+	flex: 1;
+	min-height: 40px;
+	max-height: 120px;
+	margin: 0;
+	padding: 9px 10px;
+	border: 1px solid #8c8f94;
+	border-radius: 8px;
+	font: inherit;
+	color: inherit;
+	resize: none;
+}
+.kai-chat__send {
+	height: 40px;
+	margin: 0;
+	padding: 0 16px;
+	border: 0;
+	border-radius: 8px;
+	background: var(--kai-chat-color);
+	color: #fff;
+	font: inherit;
+	font-weight: 600;
+	cursor: pointer;
+}
+.kai-chat__send:disabled { opacity: .55; cursor: default; }
+
+@media (max-width: 600px) {
+	.kai-chat { bottom: 12px; }
+	.kai-chat--right { right: 12px; }
+	.kai-chat--left { left: 12px; }
+	.kai-chat__panel { position: fixed; inset: 0; width: auto; max-width: none; height: auto; max-height: none; border: 0; border-radius: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.kai-chat__typing::after { animation: none; content: "…"; }
+}
+
+@media (prefers-contrast: more) {
+	.kai-chat__msg--bot, .kai-chat__panel { border-color: #1d2327; }
+}
+
+.kai-chat__rating { display: flex; align-items: center; gap: 6px; margin-top: 8px; }
+.kai-chat__rate { width: 32px; height: 32px; padding: 0; border: 1px solid #c3c4c7; border-radius: 6px; background: #fff; font-size: 15px; line-height: 1; cursor: pointer; }
+.kai-chat__rate:hover:not(:disabled) { border-color: var(--kai-chat-color); }
+.kai-chat__rate:disabled { cursor: default; opacity: .5; }
+.kai-chat__rate.is-chosen { opacity: 1; border-color: var(--kai-chat-color); background: #eef1fd; }
+.kai-chat__rate:focus-visible { outline: 3px solid #1d2327; outline-offset: 2px; }
+.kai-chat__thanks { font-size: 12px; color: #50575e; }
+
+.kai-chat__prompts { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 12px; }
+.kai-chat__prompt { padding: 6px 12px; border: 1px solid var(--kai-chat-color); border-radius: 16px; background: #fff; color: var(--kai-chat-color); font: inherit; font-size: 13px; text-align: left; cursor: pointer; }
+.kai-chat__prompt:hover { background: #eef1fd; }
+.kai-chat__prompt:focus-visible { outline: 3px solid #1d2327; outline-offset: 2px; }
