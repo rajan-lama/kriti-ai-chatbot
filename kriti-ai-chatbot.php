@@ -64,6 +64,8 @@ if (! function_exists('kai_chatbot_freemius_connector')) {
 
   // Init Freemius.
   kai_chatbot_freemius_connector();
+  // Freemius runs this on deletion, so there is deliberately no uninstall.php.
+  kai_chatbot_freemius_connector()->add_action('after_uninstall', array('KritiAIChatbot\\Install', 'uninstall'));
   // Signal that SDK was initiated.
   do_action('kai_chatbot_freemius_connector_loaded');
 }
